@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Validation Form Comparison</title>
+
+  <!-- Bootstrap & FontAwesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 40px;
+    }
+
+    .form-plain {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-error {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      transform: scale(0.9);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .has-error label {
+      color: #d9534f;
+    }
+
+    .has-error .form-control {
+      border-color: #d9534f;
+      box-shadow: none;
+    }
+
+    .has-error .form-text {
+      color: #d9534f;
+    }
+
+    .arrow-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .arrow-icon {
+      font-size: 2rem;
+      color: #6c757d;
+    }
+
+    @media (max-width: 768px) {
+      .arrow-col {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      
+      <!-- Left Form (Plain) -->
+      <div class="col-md-5">
+        <div class="form-plain">
+          <form>
+            <div class="mb-3">
+              <label>First Name</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="First Name">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label>Last Name</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="Last Name">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label>E-Mail</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                <input type="email" class="form-control" placeholder="E-Mail Address">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label>Phone #</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                <input type="text" class="form-control" placeholder="(845)555-1212">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label>Address</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-home"></i></span>
+                <input type="text" class="form-control" placeholder="Address">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label>City</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-home"></i></span>
+                <input type="text" class="form-control" placeholder="City">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label>State</label>
+              <select class="form-select">
+                <option>Please select your state</option>
+                <option>New York</option>
+                <option>California</option>
+                <option>Texas</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label>Do you have hosting?</label><br>
+              <input type="radio" name="hosting"> Yes
+              <input type="radio" name="hosting"> No
+            </div>
+
+            <div class="mb-3">
+              <label>Project Description</label>
+              <textarea class="form-control" placeholder="Project Description"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-warning">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Arrow Column -->
+      <div class="col-md-1 arrow-col">
+        <i class="fa-solid fa-arrow-right arrow-icon"></i>
+      </div>
+
+      <!-- Right Form (Error Preview, Smaller) -->
+      <div class="col-md-4">
+        <div class="form-error">
+          <form>
+            <div class="mb-3 has-error">
+              <label>First Name</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="First Name">
+                <span class="input-group-text text-danger"><i class="fa fa-times"></i></span>
+              </div>
+              <small class="form-text">Please supply your first name</small>
+            </div>
+
+            <div class="mb-3 has-error">
+              <label>Last Name</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="Last Name">
+                <span class="input-group-text text-danger"><i class="fa fa-times"></i></span>
+              </div>
+              <small class="form-text">Please supply your last name</small>
+            </div>
+
+            <div class="mb-3 has-error">
+              <label>E-Mail</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                <input type="email" class="form-control" placeholder="E-Mail Address">
+                <span class="input-group-text text-danger"><i class="fa fa-times"></i></span>
+              </div>
+              <small class="form-text">Please supply your email address</small>
+            </div>
+
+            <div class="mb-3 has-error">
+              <label>Phone #</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                <input type="text" class="form-control" placeholder="(845)555-1212">
+                <span class="input-group-text text-danger"><i class="fa fa-times"></i></span>
+              </div>
+              <small class="form-text">Please supply your phone number</small>
+            </div>
+
+            <div class="mb-3 has-error">
+              <label>Address</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-home"></i></span>
+                <input type="text" class="form-control" placeholder="Address">
+                <span class="input-group-text text-danger"><i class="fa fa-times"></i></span>
+              </div>
+              <small class="form-text">Please supply your street address</small>
+            </div>
+
+            <div class="mb-3 has-error">
+              <label>City</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-home"></i></span>
+                <input type="text" class="form-control" placeholder="City">
+                <span class="input-group-text text-danger"><i class="fa fa-times"></i></span>
+              </div>
+              <small class="form-text">Please supply your city</small>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Validation Form</title>
+
+  <!-- Google Fonts (Optional for nice font) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px;
+    }
+
+    .form-container {
+      background-color: #fff;
+      width: 400px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .error input,
+    .error select {
+      border-color: #e74c3c;
+      background-color: #fffafa;
+    }
+
+    .error-icon {
+      position: absolute;
+      right: 12px;
+      top: 38px;
+      color: #e74c3c;
+    }
+
+    .error-message {
+      color: #e74c3c;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    button {
+      background-color: #e74c3c;
+      color: #fff;
+      padding: 12px;
+      width: 100%;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <form>
+
+      <!-- Name Field -->
+      <div class="form-group error">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <i class="fa fa-exclamation-circle error-icon"></i>
+        <div class="error-message">Name is required</div>
+      </div>
+
+      <!-- Email Field -->
+      <div class="form-group error">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <i class="fa fa-exclamation-circle error-icon"></i>
+        <div class="error-message">Email is required</div>
+      </div>
+
+      <!-- Password Field -->
+      <div class="form-group error">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <i class="fa fa-exclamation-circle error-icon"></i>
+        <div class="error-message">Password is required</div>
+      </div>
+
+      <!-- Hobbies Field -->
+      <div class="form-group">
+        <label for="hobbies">Hobbies</label>
+        <select id="hobbies">
+          <option value="">Select a hobby</option>
+          <option value="reading">Reading</option>
+          <option value="sports">Sports</option>
+          <option value="music">Music</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
