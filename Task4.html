@@ -5,6 +5,79 @@
   <title>Hoverable Sidenav Buttons</title>
   <link rel="stylesheet" href="Task4.css">
 </head>
+<style>
+  body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #f7f7f7;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+  }
+
+  .content-box {
+    display: flex;
+    border: 1px solid #333;
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
+    min-height: 400px;
+    box-sizing: border-box;
+  }
+
+  .sidenav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    border-right: 1px solid #ddd;
+  }
+
+  .sidenav a {
+    display: block;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-indent: -9999px;
+    transition: opacity 0.3s;
+    margin-left: 0;
+  }
+
+  /* First button larger */
+  .sidenav a.green {
+    width: 70px;  /* more horizontal length */
+  }
+
+  /* Other buttons slightly increased */
+  .sidenav a.blue,
+  .sidenav a.red,
+  .sidenav a.gray {
+    width: 55px;
+  }
+
+  .green { background-color: #4CAF50; }
+  .blue { background-color: #2196F3; }
+  .red { background-color: #f44336; }
+  .gray { background-color: #555; }
+
+  .text-content {
+    flex: 1;
+    padding: 20px 30px;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 18px;
+    color: #555;
+  }
+</style>
 <body>
 
   <div class="main">

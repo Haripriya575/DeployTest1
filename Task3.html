@@ -4,6 +4,92 @@
   <meta charset="UTF-8">
   <title>Navigation Bars</title>
   <link rel="stylesheet" href="Task3.css">
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+  .section:first-child {
+margin-right: 50px;
+}
+
+  h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* Container Black Box Styling */
+  .nav-wrapper {
+    border: 3px solid black;
+    padding: 10px;
+    display: inline-block;
+  }
+
+  /* VERTICAL NAVIGATION BAR */
+  .vertical-nav {
+    border: 1px solid #000;
+    width: 180px;
+  }
+
+  .vertical-nav .header {
+    background-color: orange;
+    padding: 15px;
+    font-size: 24px;
+    color: white;
+  }
+
+  .vertical-nav .links {
+    background-color: lightblue;
+    padding: 10px;
+  }
+
+  .vertical-nav .links a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    padding: 8px 0;
+  }
+
+  /* HORIZONTAL NAVIGATION BAR */
+  .horizontal-nav-container {
+    border: 1px black;
+    width: 370px;
+  }
+
+  .horizontal-nav {
+    display: flex;
+  }
+
+  .horizontal-nav a {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    background-color: #dcdcdc;
+    border-right: 1px solid white;
+  }
+
+  .horizontal-nav a:first-child {
+    background-color: #696969;
+    color: white;
+    font-weight: bold;
+  }
+
+  .horizontal-nav a:last-child {
+    border-right: none;
+  }
+
+  .section {
+    text-align: center;
+  }
+
+  </style>
  
 </head>
 <body>
