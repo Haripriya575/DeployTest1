@@ -1,218 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,intial-scale=1.0">
-        <title>Document</title>
-       
-       <style>
-        table, th, td {
-               border:1px solid black;
-               border-collapse: collapse;
-}
-.blue-bg{
-    background-color: #D6EEEE;
-}
-.box {
-            border: 2px solid black;
-            width: 300px;
-            padding: 1px;
-            margin-bottom: 20px;
-            font-family: Arial, sans-serif;
-        }
-        .link-box {
-            border: 1px solid black;
-            width: 500px;
-            padding: 5px;
-            margin-top: 20px;
-            font-family: Arial, sans-serif;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Index</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #;
+      padding: 40px;
+      text-align: center;
+    }
 
-      body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            padding: 20px;
-      }
-      .section {
-            background-color: white;
-            padding: 20px;
-            margin: 20px 0;
-            width: 80%;
-            max-width: 800px;
-        }
-        a {
-            margin-right: 10px;
-        }
-        h2 {
-            text-align: center;
-            color: blue;
-        }
-        form {
-            width: 100%;
-        }
-        form table {
-            width: 100%;
-        }
-        </style>
-        
-    
-    
-        
+    h1, h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
 
-<table style="width:100%">
-    <colgroup>
-        <col span="3" style="background-color: #7dd4d4;">
-      </colgroup>
-           <tr>
-            <th style="padding: 8px;">Firstname</th>
-            <th style="padding: 8px;">Lastname</th>
-            <th style="padding: 8px;">Age</th>
-        </tr>
-        <tr>
-            <td style="padding: 8px;">Jill</td>
-            <td style="padding: 8px;">Smith</td>
-            <td style="padding: 8px;">50
-                <tr>
-                    <td style="padding: 8px;">Eve</td>
-                    <td style="padding: 8px;">Jackson</td>
-                    <td style="padding: 8px;">94</td>
+    ul {
+      list-style: none;
+      padding: 0;
+    }
 
-                </tr>
-                <tr>
-                    <td style="padding: 8px;">John</td>
-                    <td style="padding: 8px;">Doe</td>
-                    <td style="padding: 8px;">80</td>
-                </tr>
-            </td>
-        </tr>
-        </table>
-        </head>
-        <body>
-            <hr>
-<h3>Other Tasks</h3>
-<ul>
-  <li><a href="./task2.html">Task 1</a></li>
-  <li><a href="./task3.html">Task 2</a></li>
-  <li><a href="./task4.html">Task 3</a></li>
-  <li><a href="./task5.html">Task 4</a></li>
-  <li><a href="./task6.html">Task 5</a></li>
-  <li><a href="./task7.html">Task 6</a></li>
-  <li><a href="./task8.html">Task 7</a></li>
-  <li><a href="./task9.html">Task 8</a></li>
-  <li><a href="./task10.html">Task 9</a></li>
-  <li><a href="./task11.html">Task 10</a></li>
-  <li><a href="./task12.html">Task 11</a></li>
- </ul>
+    li {
+      background-color: #;
+      margin : 10px auto;
+      padding: 12px 18px;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
 
-            <div class="box">
-    <p>Lists can be nested(list inside list): </p>
-    
+    a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML/CSS Task Index</h1>
+
+  <section>
+    <h2>HTML Tasks</h2>
     <ul>
-      <li> Coffee</li> 
-      <li>Tea</li>
-      <ul>
-        <li>Blacktea</li>
-        <li>Greentea</li>
-      </ul>
+      <li><a href="Task1.html">task1 - All three tasks</a></li>
+      
     </ul>
-    <ul>
-        <li>Milk</li>
-    </ul>
-</div>
-<div class="link-box">
-    <p>Click any of the following links</p>
-    <a href="#" target="_blank">Opens in New</a> |
-    <a href="#" target="_self">Opens in Self</a> |
-    <a href="#" target="_parent">Opens in Parent</a> |
-    <a href="#" target="body">Opens in Body</a>
-</div>
-<div class="section" style="border: none;">
-    <h2>Registration form</h2>
-    <form>
-        <table>
-            <tr>
-                <td>First Name</td>
-                <td><input type="text" name="fname"></td>
-            </tr>
-            <tr>
-                <td>Last Name</td>
-                <td><input type="text" name="lname"></td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td><input type="email" name="email"></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td><input type="password" name="pass"></td>
-            </tr>
-            <tr>
-                <td>Re-enter Password</td>
-                <td><input type="password" name="repass"></td>
-            </tr>
-            <tr>
-                <td>Gender:</td>
-                <td>
-                    <input type="radio" name="gender" value="male"> Male
-                    <input type="radio" name="gender" value="female"> Female
-                </td>
-            </tr>
-            <tr>
-                <td>Age:</td>
-                <td><input type="number" name="age"></td>
-            </tr>
-            <tr>
-                <td>Phone Number</td>
-                <td><input type="text" name="phone"></td>
-            </tr>
-            <tr>
-                <td>Address</td>
-                <td><textarea rows="3" name="address"></textarea></td>
-            </tr>
-            <tr>
-                <td>State</td>
-                <td><input type="text" name="state"></td>
-            </tr>
-            <tr>
-                <td>Country</td>
-                <td>
-                    <select>
-                        <option>Choose your country</option>
-                        <option>India</option>
-                        <option>USA</option>
-                        <option>UK</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Languages known</strong></td>
-                <td>
-                    <input type="checkbox"> English
-                    <input type="checkbox"> Kannada
-                    <input type="checkbox"> Hindi
-                    <input type="checkbox"> Telugu
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="checkbox" checked> Hereby I declare all the given details are true
-                    <span style="float: right;">Log in to <a href="#">Acharya</a> website</span>
-                </td>
-            </tr>
-            
-        </table>
-    </form>
-</div>
-<div style="text-align: center; margin-top: -10px;">
-    <input type="submit" value="Register" style="padding: 8px 16px;">
-</div>
 
-        
-    </body>
-        
+    <h2>CSS Tasks</h2>
+    <ul>
+      <li><a href="Task2.html">CSS Task 2 - Table + Rounded Grid</a></li>
+      <li><a href="Task3.html">CSS Task 3 - Navigation Bars</a></li>
+      <li><a href="Task4.html">CSS Task 4 - Hoverable side nav</a></li>
+      <li><a href="Task5.html">CSS Task 5 - Styled company table</a></li>
+      <li><a href="Task6.html">CSS Task 6 - Login Form</a></li>
+      <li><a href="Task7.html">CSS Task 7 - My First Styled Page</a></li>
+    </ul>
+    
+      <h3>BOOTSTRAP Tasks</h3>
+    <ul>
+        <li><a href="Task8.html">bootstrap Task 8 - Builderz</a></li>
+        <li><a href="Task9.html">bootstrap 9 - Pricing</a></li>
+        <li><a href="Task10.html">bootstrap 10 - Material cards</a></li>
+        <li><a href="Task11.html">bootstrap 11 - Tas4</a></li>
+        <li><a href="Task12.html">bootstrap 12 - Task5</a></li>
+           
+    
+    </ul>
+  </section>
+
+</body>
 </html>
-
-
